@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheets/index.css">
+    <link rel="icon" href="images/remitly-icon.png">
+    <title>Remitly - Summer internship 2023</title>
+</head>
+
+<body>
+
+    <header>
+        <img id="remitly-logo" src="images/remitly-logo.jpg" alt="Logo">
+    </header>
+
+    <main>
+        <div class="main-container">
+            <section id="currency-calculator-container">
+                <form id="currency-calculator-form">
+                    <div class="currency-calculator-element">
+                        <label for="currency-from" class="currency-label">
+                            You send
+                        </label>
+
+                        <div class="currency-calculator-input-container">
+                            <div class="currency-calculator-image-container">
+                                <img id="calculator-flag-from-icon" class="calculator-flag-icon"
+                                    src="images/gb-flag.svg">
+                            </div>
+                            <input class="currency-calculator-input" type="number" id="currency-from-value"
+                                name="currency-from-value">
+                            <select id="currency-from-abbreviation" class="currency-abbreviation">
+                                <option value="GBP">GBP</option>
+                                <option value="USD">USD</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="currency-calculator-element">
+                        <label for="currency-to" class="currency-label">
+                            They receive
+                        </label>
+
+                        <div class="currency-calculator-input-container">
+                            <div class="currency-calculator-image-container">
+                                <img id="calculator-flag-to-icon" class="calculator-flag-icon" src="images/pl-flag.svg">
+                            </div>
+                            <input class="currency-calculator-input" type="number" id="currency-to-value"
+                                name="currency-to-value">
+                            <select id="currency-to-abbreviation" class="currency-abbreviation">
+                                <option value="PLN">PLN</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+            <section id="description">
+                <p>
+                    1
+                    <span id="description-exchange-from-abbreviation">GBP</span> =
+                    <span id="exchange-rate-value" class="exchange-rate"></span>
+                    <span id="description-exchange-to-abbreviation" class="exchange-rate">PLN</span>
+                </p>
+
+                <p class="transfer-description">No transfer fee</p>
+            </section>
+
+        </div>
+    </main>
+</body>
+
+<script src="../javascripts/Calculator.js"></script>
+<script src="../javascripts/Connector.js"></script>
+
+</html>

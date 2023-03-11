@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* Header styling */
+#remitly-logo {
+    width: 200px;
+}
+
+header {
+    box-shadow: 0px 20px 40px 10px #aaaaaa7a;
+}
+
+/* Main content styling */
+
+main {
+    height: calc(100vh - 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(26, 42, 59);
+    font-size: 20px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: auto;
+}
+
+.currency-calculator-input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 55px;
+    border-radius: 5px;
+    border-style: solid;
+
+    font-family: 'Roboto', sans-serif;
+    color: rgb(26, 42, 59);
+    font-size: 20px;
+}
+
+/* Remove arrows */
+.currency-calculator-input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.currency-calculator-input:focus {
+    border-style: none;
+    outline:solid rgb(32, 46, 97);
+    /* outline-color: rgb(59, 26, 54); */
+}
+
+.currency-abbreviation {
+    margin-left: -60px;
+    font-weight: 700;
+    height: 58px;
+    display: flex;
+    align-items: center;
+
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+#currency-calculator-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 500px;
+}
+
+.currency-calculator-image-container {
+    z-index: 0;
+    margin-right: -50px;
+    display: flex;
+    align-items: center;
+}
+
+.calculator-flag-icon {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #aaaaaa7a;
+    border-radius: 3px;
+    height: 30px;
+}
+
+.currency-calculator-element {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.currency-calculator-input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.transfer-description {
+    font-weight: 700;
+}
+
+.exchange-rate {
+    font-weight: 700;
+}

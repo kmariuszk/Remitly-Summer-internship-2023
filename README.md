@@ -9,6 +9,8 @@ To get started with this project, follow the steps below:
 4. Run `npm start` to start the web server
 5. Open a web browser and go to [http://localhost:3000](http://localhost:3000)
 
+![UI of the application](./screenshots/application-ui.png)
+
 ### Testing
 
 To run tests for this application run `npm test`.

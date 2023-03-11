@@ -12,3 +12,11 @@ To get started with this project, follow the steps below:
 ### Testing
 
 To run tests for this application run `npm test`.
+
+### Technology Stack
+
+The application is built using:
+- HTML/CSS - For building the UI components.
+- Express.js - For building the server.
+- Mocha - For testing.
+- Sinon - For mocking/stubbing external dependencies in tests.

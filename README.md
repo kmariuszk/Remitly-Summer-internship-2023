@@ -20,3 +20,26 @@ The application is built using:
 - Express.js - For building the server.
 - Mocha - For testing.
 - Sinon - For mocking/stubbing external dependencies in tests.
+
+### Expansion
+
+This application can be expanded by adding support for additional currencies. To do this, follow the steps below:
+1. Create a new flag image file and save it in the `./public/images` directory.
+2. Open the Connector.js file and add the new flag filename to the currenciesToFlags array. The array maps currency abbreviations to flag image filenames. For example, when you want to add 'eur':
+
+    const currenciesToFlags = {
+        PLN: "images/pl-flag.svg",
+        GBP: "images/gb-flag.svg",
+        USD: "images/us-flag.svg",
+        EUR: "images/eu-flag.svg",
+    }
+
+3. Open the index.html file in the `./public` directory and add a new option element to the select element with id currency-from-abbreviation. The text content should be the currency name.
+
+    <select id="currency-from-abbreviation" class="currency-abbreviation">
+        <option value="GBP">GBP</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+    </select>
+
+Save all changes and restart the server. The new currency should now be available for conversion.

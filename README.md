@@ -34,7 +34,7 @@ This application can be expanded by adding support for additional currencies. To
         EUR: "images/eu-flag.svg",
     }
 ```
-3. Open the index.html file in the `./public` directory and add a new option element to the select element with id currency-from-abbreviation. The text content should be the currency name.
+3. Open the index.html file in the `./public` directory and add a new option element to the select element with id 'currency-from-abbreviation'. The text content should be the currency name.
 
 ```
     <select id="currency-from-abbreviation" class="currency-abbreviation">

@@ -9,6 +9,8 @@ To get started with this project, follow the steps below:
 4. Run `npm start` to start the web server
 5. Open a web browser and go to [http://localhost:3000](http://localhost:3000)
 
+The Calculator class which is responsible for fetching the data and calculating the exchanged values can be found in the given directory: `./public/javascripts/Calculator.js`.
+
 ![UI of the application](./screenshots/application-ui.png)
 
 ### Testing
